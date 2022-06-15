@@ -38,9 +38,9 @@ jobs:
       - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-        image: docker-hub-repo/image-name
+        image:  tarikbensalim/test-project 
         registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{TARIKBENSALIM}}
+        password: ${{test_code}}
 
 
